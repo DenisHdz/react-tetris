@@ -28,13 +28,4 @@ export const StyledStage = styled.div`
     );
     max-width: 40vw;
   }
-
-  @media only screen and (max-width: 480px) {
-    grid-template-rows: repeat(
-      ${props => props.height},
-      calc(50vw / ${props => props.width})
-    );
-    max-width: 50vw;
-    margin: 0 auto;
-  }
 `;

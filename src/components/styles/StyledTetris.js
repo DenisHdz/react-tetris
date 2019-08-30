@@ -17,18 +17,13 @@ export const StyledTetris = styled.div`
   margin: 0 auto;
 
   @media only screen and (max-width: 480px) {
-    flex-direction: column;
+    padding: 20px;
   }
 
   aside {
     width: 100%;
     max-width: 200px;
     display: block;
-    padding: 0 20px;
-
-    @media only screen and (max-width: 480px) {
-      margin: 50px auto 0;
-      padding: 0;
-    }
+    padding-left: 20px;
   }
 `;
