@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 
 export const StyledTitle = styled.div`
   padding: 40px 0 0 40px;

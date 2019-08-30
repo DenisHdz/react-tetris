@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import bgImage from '../../img/bg.jpg';
 
 export const StyledTetrisWrapper = styled.div`
@@ -11,14 +11,24 @@ export const StyledTetrisWrapper = styled.div`
 
 export const StyledTetris = styled.div`
   display: flex;
+  flex-direction: row;
   align-items: flex-start;
   padding: 40px;
   margin: 0 auto;
+
+  @media only screen and (max-width: 480px) {
+    flex-direction: column;
+  }
 
   aside {
     width: 100%;
     max-width: 200px;
     display: block;
     padding: 0 20px;
+
+    @media only screen and (max-width: 480px) {
+      margin: 50px auto 0;
+      padding: 0;
+    }
   }
 `;
